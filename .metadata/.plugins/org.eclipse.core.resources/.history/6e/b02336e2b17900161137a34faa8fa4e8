@@ -1,0 +1,54 @@
+package net.springroo.myfirst.domain;
+
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import net.springroo.myfirst.domain.Users;
+
+
+@Entity
+@Table(name="pending_friendship")
+public class PendingFriendship {
+	
+	private Users friendid;
+	private Users userID;
+	private Long ID;
+	
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public Long getID() {
+		return ID;
+	}
+	public void setID(Long iD) {
+		ID = iD;
+	}
+	@ManyToOne()
+	@JoinColumn(name="friendid")
+	//@Column(name="friendID")
+	public Users getfriendID() {
+		return friendid;
+	}
+	public void setfriendID(Users friendid) {
+		this.friendid = friendid;
+	}
+	@ManyToOne()
+	@JoinColumn(name="userid")
+	//@Column(name="userID")
+	public Users getuserID() {
+		return userID;
+	}
+	public void setuserID(Users userID) {
+		this.userID = userID;
+	}
+	
+
+}

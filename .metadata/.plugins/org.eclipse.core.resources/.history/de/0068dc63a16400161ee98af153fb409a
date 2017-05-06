@@ -1,0 +1,20 @@
+package com.springframework.service;
+
+import org.springframework.stereotype.Service;
+
+import com.springframework.myfirst.domain.User;
+
+@Service
+public class LoginService {
+
+private LoginService(){
+	
+}
+	
+
+public Boolean validateUsernameandPassword(User user){
+	
+	return false;
+}
+	
+}

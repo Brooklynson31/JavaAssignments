@@ -1,0 +1,20 @@
+1471887929685	Delete element
+1471894581386	Delete element
+1471898564173	Move folder
+1471898684264	Delete element
+1471900979190	Move file
+1471903170332	Encapsulate field 'confirmpassword'
+1471903850859	Encapsulate field 'accountTypes'
+1471903874525	Encapsulate field 'termsofService'
+1471903950946	Encapsulate field 'countries'
+1471904182231	Encapsulate field 'accountTypes'
+1471905440770	Extract method 'populateModel'
+1471905609006	Move file
+1471955345155	Rename resource 'login.jsp'
+1471955627840	Move compilation unit
+1472045138121	Delete element
+1472248158509	Delete element
+1472248365760	Encapsulate field 'content'
+1472248891854	Encapsulate field 'user'
+1472249056152	Encapsulate field 'messages'
+1472251246596	Encapsulate field 'user'

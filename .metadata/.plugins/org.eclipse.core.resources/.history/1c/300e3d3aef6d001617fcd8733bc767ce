@@ -1,0 +1,38 @@
+package net.springroo.myfirst.web;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import net.springroo.myfirst.dao.MessageDAO;
+import net.springroo.myfirst.domain.Message;
+
+@Controller
+@RequestMapping("/app")
+public class HomeController {
+	
+	
+@RequestMapping(value = "home", method = RequestMethod.GET)	
+String home(Model model){
+	
+	return "app/home";
+}
+
+
+@RequestMapping(value = "home", method = RequestMethod.POST)	
+String homePost(@ModelAttribute("message") Message message, Model model, HttpServletRequest request ){
+	message = new Message();
+	model.addAttribute("message", message);
+	
+	MessageDAO message1;
+	message1.saveMessage(message);
+	
+	return "app/home";
+}
+
+
+}

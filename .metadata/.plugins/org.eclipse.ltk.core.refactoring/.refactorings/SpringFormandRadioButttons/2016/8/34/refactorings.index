@@ -1,0 +1,27 @@
+1471265101950	Delete element
+1471265572306	Rename resource 'home.jsp'
+1471299745361	Encapsulate field 'accountType'
+1471300049579	Extract method 'populateModel'
+1471301290568	Encapsulate field 'userAgreement'
+1471301786491	Encapsulate field 'visitedCountires'
+1471437172666	Rename type 'HomeController'
+1471437528411	Rename type 'LoginController'
+1471441616392	Delete element
+1471453791513	Delete element
+1471455482251	Rename package 'com.springframework.domain'
+1471455500941	Rename package 'com.springframework.service'
+1471473809289	Move file
+1471473826912	Move file
+1471473829785	Move file
+1471473833164	Move file
+1471473868556	Move file
+1471474017390	Rename resource 'successfullogin.jsp'
+1471474066125	Rename resource 'home.jsp'
+1471474080613	Rename resource 'registration.jsp'
+1471474092769	Rename resource 'login.jsp'
+1471474098919	Rename resource 'apple.jsp'
+1471474110473	Move file
+1471520747350	Rename type 'HomeController'
+1471520761035	Rename type 'LoginController'
+1471520768154	Rename type 'LoginControllers'
+1471521681522	Extract method 'addMessagestoList'

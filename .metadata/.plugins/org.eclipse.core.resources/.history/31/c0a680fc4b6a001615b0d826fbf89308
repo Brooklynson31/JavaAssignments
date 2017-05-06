@@ -1,0 +1,19 @@
+package net.springroo.myfirst.dao;
+
+import org.springframework.stereotype.Repository;
+
+import net.springroo.myfirst.domain.Users;
+
+@Repository
+public class LoginDAO {
+	
+	public Users getUsername(Users user){
+		
+		user.setUsername("mharper");
+		
+		
+		
+		return user;
+	}
+
+}

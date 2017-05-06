@@ -1,0 +1,31 @@
+package net.springroo.myfirst.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.Message;
+
+@Repository
+@Transactional
+public class MessageDAO {
+
+	@PersistenceContext
+	EntityManager em;
+	
+
+	
+	public List<Message> getMessages(){
+		
+		return null;			
+	}
+	
+	public Message getMessageByID(){
+		return null;
+	}
+
+}

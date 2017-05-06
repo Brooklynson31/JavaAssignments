@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$("#SubmitBtn").click( function() {
+	var password = $("#password").val();
+	var confirmpassword = $("#confirmpassword").val();
+		if(password == confirmpassword){
+			$("#users").submit();
+			}
+		else {
+		alert("passwords dont match!");
+		return false;
+		}
+	
+	});
+	
+});
+
+</script>
+<title>Mike's Login Page</title>
+</head>
+<body>
+<form:form commandName="users" method="POST">
+Username: <form:input path="username" id="username" /><br/>
+Password: <form:password path="password" id="password"/><br/>
+ConfirmPassword: <form:password path="confirmpassword" id="confirmpassword"/><br/>
+
+Account Type: <form:radiobuttons path="accountTypes" items="${accountTypes}"/><br/>
+Do you agree<br/> to the terms of Service?<form:checkbox path="termsofService" items="${termsofService}" label = "Agree"/><br/>
+visited Countires <form:checkboxes path="countries" items="${countries}" label = "Agree"/><br/>
+
+
+<input type = "submit" id="SubmitBtn" value = "Submit"/>
+</form:form>
+</body>
+</html>

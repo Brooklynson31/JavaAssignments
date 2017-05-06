@@ -1,0 +1,5 @@
+package net.springroo.myfirst.service;
+
+public class LoginService {
+
+}

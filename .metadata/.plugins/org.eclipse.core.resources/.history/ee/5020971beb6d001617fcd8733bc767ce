@@ -1,0 +1,38 @@
+package net.springroo.myfirst.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.Message;
+
+@Repository
+@Transactional
+public class MessageDAO {
+
+	@PersistenceContext
+	EntityManager em;
+	
+
+
+	
+	public List<Message> getMessages(Message message){
+		Session session = (Session) em.getDelegate();
+		
+		List<Message> messages = session.createCriteria(Message.class)
+				.add(Restrictions.eq("id", message.))
+		return null;		
+	}
+	
+	public Message getMessageByID(){
+		Session session = (Session) em.getDelegate();
+		return null;
+	}
+
+}

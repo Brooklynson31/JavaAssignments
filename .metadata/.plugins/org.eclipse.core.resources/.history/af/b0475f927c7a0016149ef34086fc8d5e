@@ -1,0 +1,15 @@
+package net.springroo.myfirst.domain;
+
+public class FriendshipForm {
+	
+	private Long pendingFriendshipUserId;
+
+	public Long getPendingFriendshipUserId() {
+		return pendingFriendshipUserId;
+	}
+
+	public void setPendingFriendshipUserId(Long pendingFriendshipUserId) {
+		this.pendingFriendshipUserId = pendingFriendshipUserId;
+	}
+
+}

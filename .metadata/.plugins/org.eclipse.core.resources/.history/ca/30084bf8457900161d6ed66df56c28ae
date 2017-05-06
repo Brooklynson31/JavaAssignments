@@ -1,0 +1,28 @@
+package net.springroo.myfirst.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.Users;
+
+@Repository
+@Transactional
+public class UserDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+
+	public Users getUserbyUsername(String searchString) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void addFriendRequest(Users user, Users friend) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

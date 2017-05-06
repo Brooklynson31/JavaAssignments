@@ -1,0 +1,5 @@
+package net.springroo.myfirst.dao;
+
+public class PendingFriendshipDAO {
+
+}

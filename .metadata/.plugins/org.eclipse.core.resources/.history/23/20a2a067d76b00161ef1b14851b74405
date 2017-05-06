@@ -1,0 +1,5 @@
+package net.springroo.myfirst.domain;
+
+public class Message {
+
+}

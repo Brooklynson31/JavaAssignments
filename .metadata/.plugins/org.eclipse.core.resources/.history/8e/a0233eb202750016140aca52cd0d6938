@@ -1,0 +1,31 @@
+package net.springroo.myfirst.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.Users;
+
+@Repository
+@Transactional
+public class UserDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+	
+	public Users getUserbyUsername(String username){
+		Session session = (Session) em.getDelegate();
+		
+		return (Users) session.createCriteria(Users.class).add(Restrictions.eq("userfromDB",username)).uniqueResult();
+		
+		
+	}
+	public void addFriend(){
+		
+	}
+
+}

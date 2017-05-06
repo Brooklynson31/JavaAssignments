@@ -1,0 +1,9 @@
+package net.springroo.myfirst.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class LoginService {
+	
+
+}

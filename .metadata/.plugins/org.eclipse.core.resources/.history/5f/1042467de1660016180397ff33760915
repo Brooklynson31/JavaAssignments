@@ -1,0 +1,6 @@
+/target/
+/.gitignore
+/.project
+/.settings/
+/bin/
+/log.roo

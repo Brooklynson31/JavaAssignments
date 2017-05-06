@@ -1,0 +1,21 @@
+1473722514956	Delete element
+1473724262653	Rename package 'net.springroo.myfirst.dao.domain'
+1473724304954	Delete element
+1473730683307	Move folder
+1473733776033	Move package
+1473733817528	Move folder
+1473733891671	Rename package 'domain'
+1473770446518	Rename field 'userID'
+1473770485789	Rename field 'friendID'
+1473772572649	Encapsulate field 'friendId'
+1473772579107	Encapsulate field 'userId'
+1473810827240	Encapsulate field 'pendingFriendship'
+1473813453712	Encapsulate field 'userId'
+1473854760798	Encapsulate field 'action'
+1473856521072	Encapsulate field 'pendingFriendshipUserId'
+1473857190268	Extract method 'populateHomemethod'
+1473857621616	Rename method 'populateHomemethod'
+1473858612748	Encapsulate field 'action'
+1474027753720	Encapsulate field 'firstName'
+1474027760427	Encapsulate field 'lastName'
+1474027948254	Delete element

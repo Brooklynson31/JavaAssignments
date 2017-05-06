@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
-locationcom.pivotal.server.tc.runtime.80=C\:/Users/Michael/Desktop/Spring Tool Suite/pivotal-tc-server-developer-3.1.5.RELEASE
+locationcom.pivotal.server.tc.runtime.80=C\:/Users/Michael/Desktop/pivotal-tc-server-developer-3.1.5.RELEASE
+locationorg.eclipse.jst.server.tomcat.runtime.60=C\:/Users/Michael/STSworkspace
+locationorg.eclipse.jst.server.tomcat.runtime.90=C\:/Users/Michael/STSworkspace/Servers/apache-tomcat-9.0.0.M9

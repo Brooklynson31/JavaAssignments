@@ -1,0 +1,27 @@
+package net.springroo.myfirst.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.PendingFriendship;
+
+@Repository
+@Transactional 
+public class PendingFriendshipDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+
+	public static List<PendingFriendship> getPendingFriendships() {
+		Session session = (Session) em.getDelegate();
+		
+		return null;
+	}
+
+}

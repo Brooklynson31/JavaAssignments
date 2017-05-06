@@ -1,0 +1,23 @@
+package net.springroo.myfirst.dao;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import net.springroo.myfirst.domain.Users;
+
+@Repository
+@Transactional
+public class LoginDAO {
+	
+	
+	
+	public Users getUsername(Users user){
+		
+		user.setUsername("mharper");
+		
+		
+		
+		return user;
+	}
+
+}
